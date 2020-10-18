@@ -1,0 +1,7 @@
+{
+  "@loopback/cli": {
+    "packageManager": "npm",
+    "version": "2.13.1"
+  },
+  "generator-loopback": {}
+}
