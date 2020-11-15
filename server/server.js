@@ -129,7 +129,7 @@ app.models.RoleMapping.find({
       }
     }, (userErr, user) => {
       if (!userErr && user) {
-        app.models.Role.find({
+        app.models.Role.findOne({
           where: {
             name: "admin"
           }
