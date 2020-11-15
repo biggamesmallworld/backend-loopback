@@ -115,6 +115,8 @@ app.models.Role.find({
   }
 });
 
+
+// add admin for initial deployment
 app.models.RoleMapping.find({
   where: {
     role: "admin"
@@ -126,7 +128,7 @@ app.models.RoleMapping.find({
         role: "admin"
       }
     }, (userErr, user) => {
-      if (!userErr && users) {
+      if (!userErr && user) {
         app.models.Role.find({
           where: {
             name: "admin"
